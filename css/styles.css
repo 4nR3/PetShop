@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
 .encabezado{
     display: flex;
     flex-direction: column;
@@ -9,8 +8,9 @@
 .topbar{
 
    color:white;
-   height: 20px;
+   height: 30px;
    background-color: black;
+
    font-family: Roboto; 
    font-style: normal;
    font-weight: normal;
@@ -21,15 +21,19 @@
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-between;
-
+   align-items: center;
+   
 }
 
 .derecha{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    width: 100px;   
+    align-items: center;
+    margin-right: 5px;
 }
+
 
 .subheader{
 
@@ -45,6 +49,7 @@
 
     display: flex;
     flex-direction: row;
+   
 }
 
 .logo Img{
@@ -54,11 +59,13 @@
     align-self: center;
 }
 
+
+
 .redireccionables{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+    width: 450px;
 }
 
 .negro{
@@ -69,10 +76,17 @@
 
 
 .banner {
-    width: auto;
+    
     height: 409px;
+    display: flex;
     position: relative;
-    background-size: cover;
+    background-color: #9FDBB7;
+    
+}
+
+.imagen_banner{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .banner img{
@@ -84,12 +98,15 @@
     background-size: cover;
 }
 
+
 .mensajeDeBienvenida{
 
-    display: flex;
+    position: absolute;
     background-color: white;
     width: 356px;
-    height: 13%;
+    height: 54px;
+    left: 648px;
+    top: 156px;
     text-align: center;  
 
 }
@@ -99,7 +116,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 100%;
+    font-size: 30px;
     margin-top: 5px;
 }
 
@@ -407,4 +424,3 @@ footer{
 .naranja{
     color: #F0A83E;
 }
-
