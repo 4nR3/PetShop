@@ -11,7 +11,6 @@
    color:white;
    height: 20px;
    background-color: black;
-
    font-family: Roboto; 
    font-style: normal;
    font-weight: normal;
@@ -46,7 +45,6 @@
 
     display: flex;
     flex-direction: row;
-   
 }
 
 .logo Img{
@@ -56,12 +54,11 @@
     align-self: center;
 }
 
-
-
 .redireccionables{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 
 .negro{
@@ -89,12 +86,10 @@
 
 .mensajeDeBienvenida{
 
-    position: absolute;
+    display: flex;
     background-color: white;
     width: 356px;
-    height: 54px;
-    left: 648px;
-    top: 156px;
+    height: 13%;
     text-align: center;  
 
 }
@@ -104,7 +99,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 100%;
     margin-top: 5px;
 }
 
