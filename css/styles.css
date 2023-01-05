@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .encabezado{
     display: flex;
     flex-direction: column;
@@ -49,12 +54,7 @@
     color:white;
 }
 
-.logo{
 
-    display: flex;
-    flex-direction: row;
-   
-}
 
 .logo Img{
 
@@ -88,11 +88,6 @@
     
 }
 
-.imagen_banner{
-    max-width: 100%;
-    max-height: 100%;
-}
-
 .banner img{
 
     max-width: 100%;
@@ -102,33 +97,24 @@
     background-size: cover;
 }
 
-
-.mensajeDeBienvenida{
-
-    position: absolute;
-    background-color: white;
-    width: 356px;
-    height: 54px;
-    left: 648px;
-    top: 156px;
-    text-align: center;  
-
+.mensajesBanner{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
+
 .mensajeDeBienvenida p{
-    
+   
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     margin-top: 5px;
+    text-align: center;
 }
 
 .mensajeDeDescuento{
-    position: absolute;
-    left: 740px;
-    top: 205px;
-    width: 190px;
+    width: 100%;
     height: 19px;
 }   
 
@@ -139,22 +125,15 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
+    text-align: center;  
 
 }
 
 .comederos{
 
-    position: absolute;
     background-color: #F0A83E;
-    color:white;
-    width: 141px;
-    height: 49px;
-    left: 767px;
-    top: 253px;
     font-size: 16px;
-    display: block;
     text-align: center; 
-    text-emphasis: none;
     text-decoration: none;   
 }
 
@@ -356,7 +335,6 @@ footer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 20%;
     height: auto;
 }
 
@@ -372,11 +350,19 @@ footer{
     width: 50px;
     height: 50px;
     bottom: 23px;
-    margin-left: 5%;
+    margin-left: 1%;
     border-radius: 100%;
     background-color: #786960;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#footI{
+    color: white;
+    font-size: large;
+}
+
 
 .textoInfo{
 
@@ -427,4 +413,206 @@ footer{
 
 .naranja{
     color: #F0A83E;
+}
+
+.divComederos{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+
+@media only screen and (max-width:415px){
+    .logo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    .mensajesBanner{
+        position: absolute;
+        width: 95%;
+        left: 2.5%;
+        top: 30%;
+        text-align: center;
+    }
+
+    .comederos{
+        width: 100%;
+        min-height: 100%;
+        max-height: 200%;
+    }
+
+    .imagen_banner{
+        width: 1024px;
+        max-height: 100%;
+        background: url("../img/bowl-phone.png");
+    }
+
+    .divComederos{
+        position: relative;
+        background-color: #F0A83E;
+        width: 141px;
+        height: 49px;
+
+    }
+
+    .mensajeDeBienvenida{
+        position: relative;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%; 
+        background-color: white;
+    }
+
+    .mensajeDeDescuento p{
+        color: white;
+    }
+
+    .contenidoFooter{
+        background-color: #3C2313;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+        
+    .infoLocal{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 65%;
+        height: auto;
+    }
+
+    .logoFooter{
+        width: 45%;
+
+    }
+    
+}
+
+@media only screen and (min-width:415px) and (max-width:1365px){
+    .logo{
+
+        display: flex;
+        flex-direction: row;
+       
+    }
+
+    .mensajesBanner{
+        position: absolute;
+        width: 50%;
+        right: 0;
+        top: 30%;
+        text-align: center;
+    }
+
+    .mensajesBanner *{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .comederos{
+        width: 100%;
+        min-height: 100%;
+        max-height: 200%;
+    }
+
+    .imagen_banner{
+        width: 100%;
+        max-height: 100%;
+        background: url("../img/bowl-and-pet-daities-on-green-background 1.png");
+    }
+
+    .divComederos{
+        position: relative;
+        background-color: #F0A83E;
+        width: 141px;
+        height: 49px;
+    }
+
+    .mensajeDeBienvenida{
+        position: relative;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 90%; 
+        background-color: white;
+    }
+
+    .mensajeDeDescuento p{
+        color: white;
+    }
+
+    .infoLocal{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .logo{
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mensajesBanner{
+        position: relative;
+        width: 25%;
+        height: 54px;
+        bottom: 7.5vh;
+        margin-right: 5%;
+    }
+
+    .imagen_banner{
+        width: 1024px;
+        max-height: 100%;
+        background: url("../img/bowl-and-pet-daities-on-green-background 1.png");
+    }
+
+    .comederos{
+        width: 100%;
+        min-height: 100%;
+        max-height: 200%;
+    }
+
+    .divComederos{
+        position: relative;
+        background-color: #F0A83E;
+        width: 141px;
+        height: 49px;
+    }
+
+    .mensajeDeBienvenida{
+        position: relative;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%; 
+        background-color: white;
+    }
+
+    .mensajeDeDescuento p{
+        color: black;
+    }
+
+    .infoLocal{
+        width: 20%;
+        margin-left: 5%;
+        justify-content: space-around;
+    }
+
+    .logoFooter{
+        margin-right: 5%;
+    }
+
+    .cajasInfo{
+        height: 20%;
+    }
 }
